@@ -1,0 +1,273 @@
+
+
+body{
+margin: 0;
+background-color: #f1f1f1;
+display: block;
+
+
+}
+
+.header{
+    background-color:brown;
+    height: 19px;
+    display: absolute;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+   letter-spacing: 1px;
+  
+    
+}
+
+/*inicio menu do topo*/
+
+.menu{
+    overflow: hidden;
+    background-color: #333;
+    height: 40px;
+
+}
+
+.menu a {
+
+    float: left;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 15px 9px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    
+}
+.menu a:hover{
+    color:black;
+    background-color:white;
+}
+.login{
+    float: right;
+}
+/*fim menu do topo*/
+
+.main{
+    background-color:#f1f1f1 ;
+    height: auto;
+    margin: 0;
+    display: block;
+    
+    
+}
+a.foto{
+    justify-self: center;
+    align-content: center;
+    display: flex;
+    padding: 0;
+}
+
+/*inicio participantes*/
+
+.conteiner {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 100px 30px 0px 30px; 
+}
+ .conteiner h1{
+     text-align: center;
+ }
+ .conteiner li{
+     font-size: 20px;
+     list-style: none;
+ }
+ .conteinerparticipantes{
+    margin-top: 40px;
+     height: 300px;
+     text-align: center;
+ }
+ .miniconteiner{
+     width: 876px; 
+     height: 180px;
+     background-color:black;
+     margin: 0 auto;
+ }
+ .usuario{
+     height: 78px;
+     width: 280px;
+     background-color:#333;
+     border: 1px black solid;
+     display: flex;
+     float: left;
+     padding: 5px;
+     align-items: center;
+     color: white;
+     font-size: 15px;
+     cursor: pointer;
+    text-align: left;
+    position:relative;
+
+ }
+ 
+ .usuario:hover{
+    background-color:white;
+    top:-2px;box-shadow:0 3px 3px black;
+
+ }
+ .usuario a {
+    width: 100%;  
+    text-decoration: none;
+    color: white;
+ }
+ .usuario a:hover{
+     color: black;
+ }
+ .usuario h2{
+margin-left: 13px;
+ }
+ .linha{
+     background-color: transparent;
+     display: flex;
+     float: left;
+    text-align: center;
+    height: auto;
+
+ }
+ .minifoto{
+     height: 60px;
+     width: 60px;
+    border: 2px #333 solid;
+    border-radius: 50%;
+ }
+ .usuario h1{
+     padding: 10px;
+ }
+ 
+/*fim participantes*/
+
+/*inicio do inicio*/
+ .inicio {
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    padding: 70px 30px 0px 30px;
+
+ }
+ .inicio pre{
+    font-size: 15px;
+    border-bottom: 3px solid rgb(75, 73, 73);
+    padding-bottom: 50px;
+    line-height: 25px;
+    text-align: left;
+    
+
+ }
+
+ .inicio h1{
+    text-align: center;
+ }
+
+/*fim do inicio*/
+
+ .fixed{             /* classe para fixar a header e o menu no topo*/
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+  z-index: 100;
+ }
+ .fotoIntegrantes{     /*fundo da foto*/
+     background-color: black;
+     height: 100vh;
+     text-align: center;
+     padding-top: 1px;
+     width: 100%;
+     left: 0;
+     right: 0;
+ }
+ 
+ .fotoIntegrantes img{
+     height: 89vh;
+ }
+ .conteinerfoto{
+     padding-top: 59px;
+ }
+
+ /*inicio gametags*/
+ 
+ .warzone{  /* foto de fundo*/
+     height: 100vh;
+    z-index: 1;
+    position: absolute;
+    margin-left: 100px;
+    margin-right: 100px;
+     
+ }
+ .gametags{    /*fundo da foto*/
+     height: 100vh;
+     background-color: #d1c2c2;
+     padding-top: 60px;
+     width: 100%;
+     text-align: center;
+     display: flex;
+    
+ }
+ 
+ .caixapreta{   /* bloco trasparente contendo as 2 colunas*/
+     height: max-content;
+     width: 350px;
+     background-color: black;
+     opacity: 0.9;
+     z-index: 50;
+     text-align: center;
+     
+     margin-left: 450px;
+     margin-top: 60px;
+     display: flex;
+
+ }
+ .metadecp{     /* colunas do bloco */
+     height: 99%;
+     width: 50%;
+     
+    
+ }
+ .itemtag{  /* intens de fundo escuro das colunas*/
+     height: 30px;
+     width: 100%;
+     list-style: none;
+     color: white;
+     display: flow-root;
+ }
+ .itemtag1{  /*itens de fundo claro das colunas*/
+        height: 30px;
+        width: 100%;
+        list-style: none;
+        color: white;
+        background-color: rgb(26, 26, 26);
+        display: flow-root;
+}
+.copiar {
+    width: 17px;
+    height: 17px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.tag{
+    float: left;
+    padding: 6px;
+    padding-left: 20px;
+    
+}
+.btn{   /* botão copiar e colar*/
+    background-color:transparent;
+    border: 0;
+    margin: 3px;
+    float: right;
+    
+}
+   
+/*fim gametags*/
+ 
+
+ 
+ 
