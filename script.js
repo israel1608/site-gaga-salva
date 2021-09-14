@@ -1,9 +1,11 @@
+/* nao faz nada */
 let el= document.getElementById('link')
 
 function ativador(){
     el.classList.add('ativado')
 }
 
+/*Função do botão de copiar e colar*/
 
 var clipboard = new ClipboardJS('.btn');
 
@@ -21,6 +23,9 @@ clipboard.on('error', function(e) {
     console.error('Trigger:', e.trigger);
 });
 
+/* fim da função copiar e colar*/ 
+
+/* função para deixar o scroll suave*/
 $('.mini-menu a[href^="#"]').on('click', function(e) {
 	e.preventDefault();
 	var id = $(this).attr('href'),
@@ -30,3 +35,5 @@ $('.mini-menu a[href^="#"]').on('click', function(e) {
 		scrollTop: targetOffset - 0
 	}, 500);
 });
+
+/* fim scroll suave */
