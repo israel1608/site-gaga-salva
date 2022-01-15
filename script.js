@@ -37,3 +37,18 @@ $('.mini-menu a[href^="#"]').on('click', function(e) {
 });
 
 /* fim scroll suave */
+let n = '';
+let user1 = document.querySelector('#user1');
+let teste = document.querySelector('#teste');
+//let imgUser = document.querySelector('#imgUser');
+let pUser = document.querySelector('#pUser');
+
+function usuario(n){
+
+    teste.style.display= "flex";
+    $('#imgUser').attr('src',users[n].img);
+    $('#pUser').html(users[n].descricao);
+};
+function fechar(){
+    teste.style.display= "none";
+}

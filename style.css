@@ -109,14 +109,15 @@ a.foto{
  .usuario:hover{
     background-color:white;
     top:-2px;box-shadow:0 3px 3px black;
+    color: #000;
 
  }
- .usuario a {
+ .usuario h2 {
     width: 100%;  
     text-decoration: none;
     color: white;
  }
- .usuario a:hover{
+ .usuario h2:hover{
      color: black;
  }
  .usuario h2{
@@ -267,7 +268,43 @@ margin-left: 13px;
 }
    
 /*fim gametags*/
+
+.teste{
+    display: none;
+    align-items: center;
+    background-color: rgba(0,0,0,.65);
+    bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    left: 0;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    -webkit-tap-highlight-color: #000;
+    top: 0;
+    z-index: 100;
+}
+.fechar{
+ float:right;
+
+}
+.testeContent{
+    height: min-content;
+    width: 400px;
+    background-color: white;
+    margin: auto;
+}
+.telaUser{
+    padding: 15px;
+}
+.imgUser{
+    width: 300px;
+    padding: 20px;
+}
+
  
 
  
+
  
