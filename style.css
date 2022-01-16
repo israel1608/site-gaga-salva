@@ -302,6 +302,25 @@ margin-left: 13px;
     width: 300px;
     padding: 20px;
 }
+.arquivos{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(207, 226, 220);
+    padding: 40px;
+}
+.arquivos-content{
+    border: #000 solid 1px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.cabeçalho{
+    padding: 15px;
+}
+.itens-tabela{
+    padding: 15px;
+}
 
  
 
