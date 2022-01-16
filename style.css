@@ -321,7 +321,15 @@ margin-left: 13px;
 .itens-tabela{
     padding: 15px;
 }
-
+.fotos{
+width: 50%;
+position: relative;
+margin: 0 auto;
+padding: 40px;
+}
+.fotos-contente{
+    background-color: #000;
+}
  
 
  

@@ -52,3 +52,11 @@ function usuario(n){
 function fechar(){
     teste.style.display= "none";
 }
+
+$('.carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
