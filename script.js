@@ -60,3 +60,21 @@ $('.carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
   });
+
+  let linhaTabela = document.querySelector('#linhaTabela');
+  let itemTabela = document.querySelector(".util");
+
+function carregarTabela(){
+    let k=0;
+    while(k < tabela.length){
+    let ajuda = tabela[k].filename;
+    $('#linhaTabela').append(`<td>${ajuda}</td>`);
+    console.log();
+    k++;
+    }
+}
+
+
+  
+
+ 

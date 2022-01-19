@@ -1,0 +1,9 @@
+-qual o gênero dos filmes que a pessoa assiste 
+-se a pessoal gosta de filmes mais populares ou mais conceituais
+-qual o diretor dos filmes que ela gosta
+-quais os atores principais dos filmes que ela assiste 
+
+0ºrecomendaria oq tem de novo
+1ºrecomendaria oq é mais assistido no momento
+2ºrecomendaria oq é semelhante ao já assistido anteriormente pela pessoa
+3ºrecomendaria algo completamente diferente do que ja foi recomendado anteriormente

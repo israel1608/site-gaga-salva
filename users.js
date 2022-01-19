@@ -28,5 +28,25 @@ let users =[
         img: 'https://www.pontofrio-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1433594623',
         descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consectetur at esse natus ullam eaque? Cumque repudiandae quas praesentium! Distinctio corrupti error neque enim reprehenderit nam eligendi quaerat a itaque? Jonh Wick'
     }
-]
+];
 
+let tabela =[
+    {
+        filename: 'teste1',
+        size:2432534,
+        tipo:'txt',
+        modified: '23/09/2015'
+    },
+    {
+        filename: 'teste2',
+        size:2432534,
+        tipo:'txt',
+        modified: '23/09/2016'
+    },
+    {
+        filename: 'teste3',
+        size:2432534,
+        tipo:'txt',
+        modified: '23/09/2017'
+    }
+]
