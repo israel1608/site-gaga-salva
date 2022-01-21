@@ -18,6 +18,12 @@ include("teste.php");
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
     
+    <script>
+        $(document).ready(function(){
+            carregarTabela();
+            loadTabela();
+        });
+    </script>
 </head>
 <body>
      <div class="fixed">
@@ -193,7 +199,7 @@ include("teste.php");
                 <div id='arquivos'class="arquivos">
                     <div class="arquivos-content">
                         <h1>Arquivos</h1>
-                    <table>
+                    <table id="tabela">
                         <tr>
                           <th class="cabeçalho">Nome</th>
                           <th class="cabeçalho">tamanho</th>
@@ -202,6 +208,7 @@ include("teste.php");
                         </tr>
         
                         <tr id="linhaTabela">     
+
                         </tr>    
                     </table>
                     </div>
@@ -235,8 +242,8 @@ include("teste.php");
         rodape
     </div>-->
    
-    <script src="script.js"></script>
-    <script src="users.js"></script>
-    
+<script src="script.js"></script>
+<script src="users.js"></script>
+   
 </body>
 </html>

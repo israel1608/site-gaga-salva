@@ -12,7 +12,12 @@ foreach($arquivos as $arq){
         array_push($data, $info);
     }  
 } 
-//echo json_encode($data);
+ //json_encode($data);
 //echo($data[0]["filename"]);
+$arquivo = 'data.json';
+$json = json_encode($data);
+$file = fopen(__DIR__ . '/' . $arquivo,'w');
+fwrite($file, $json);
+fclose($file);
 
 ?>

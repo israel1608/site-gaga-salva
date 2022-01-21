@@ -65,14 +65,25 @@ $('.carousel').slick({
   let itemTabela = document.querySelector(".util");
 
 function carregarTabela(){
-    let k=0;
-    while(k < tabela.length){
-    let ajuda = tabela[k].filename;
-    $('#linhaTabela').append(`<td>${ajuda}</td>`);
-    console.log();
-    k++;
-    }
+    for(var k in tabela){
+        $('#tabela').append(`<tr id="linha${k}"></tr>`)
+        Object.values(tabela[k]).forEach(function(item){
+        $(`#linha${k}`).append(`<td>${item}</td>`)
+        })
+    } 
 }
+
+function loadTabela(){
+    fetch('http://localhost/site-gaga-salva/data.json').then(function(resultado){
+        return resultado.json();
+    }).then(function(json){
+        console.log(json);
+    }).catch(function(error){
+        console.log("deu erro "+error);
+    })
+}
+
+
 
 
   
