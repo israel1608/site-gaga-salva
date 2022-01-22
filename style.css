@@ -314,6 +314,10 @@ margin-left: 13px;
     border: #000 solid 1px;
     background-color: #f2f2f2;
     padding: 20px;
+    padding-bottom: 40px;
+}
+.arquivos-content h1{
+margin: 15px auto;
 }
 .cabeçalho{
     padding: 15px;
@@ -321,17 +325,46 @@ margin-left: 13px;
 .itens-tabela{
     padding: 15px;
 }
+#tabela td th {
+    padding: 5px;
+}
 .fotos{
 width: 50%;
 position: relative;
 margin: 0 auto;
-padding: 40px;
+}
+#fotos{
+    padding-top: 25px;
 }
 .fotos-contente{
     background-color: #000;
+    margin: 0 auto;
 }
- 
-
+.slick-dots li.slick-active button:before
+{
+    color: rgb(253, 2, 2) !important;
+}
+.loginn{
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login-contente{
+    height: 300px;
+    width: 200px;
+    background-color: rgb(66, 66, 66);
+    border-radius: 10%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+.inputs{
+    margin: 15px;
+}
  
 
  

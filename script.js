@@ -64,23 +64,39 @@ $('.carousel').slick({
   let linhaTabela = document.querySelector('#linhaTabela');
   let itemTabela = document.querySelector(".util");
 
-function carregarTabela(){
-    for(var k in tabela){
-        $('#tabela').append(`<tr id="linha${k}"></tr>`)
-        Object.values(tabela[k]).forEach(function(item){
-        $(`#linha${k}`).append(`<td>${item}</td>`)
-        })
-    } 
-}
+
 
 function loadTabela(){
-    fetch('http://localhost/site-gaga-salva/data.json').then(function(resultado){
+    fetch('http://localhost/site-gaga-salva/data.json').then(function(resultado){ //requisição do data.json
         return resultado.json();
     }).then(function(json){
-        console.log(json);
+
+        for(var k in json){
+            $('#tabela').append(`<tr id="linha${k}"></tr>`)
+            /*Object.values(json[k]).forEach(function(item){ // puxa todos os valores de forma automatica
+            $(`#linha${k}`).append(`<td>${item}</td>`)
+            })*/
+            $(`#linha${k}`).append(`<td><a href="${json[k].url}" target="_blank">${json[k].name}</a></td>`)
+            $(`#linha${k}`).append(`<td>${json[k].type}</td>`)
+            $(`#linha${k}`).append(`<td>${json[k].size}</td>`)
+            $(`#linha${k}`).append(`<td>${json[k].modified}</td>`)
+        } 
+        //console.log(json);
     }).catch(function(error){
         console.log("deu erro "+error);
     })
+}
+
+function abrirLogin(){
+    $("#login").css("display","flex");
+}
+
+
+function fecharLogin(){
+    
+    setTimeout(function(){
+        $("#login").css("display","none");
+    },500)
 }
 
 
