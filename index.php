@@ -47,7 +47,7 @@ include("teste.php");
                     <!--<a class="ativo" href="#">videos</a>-->
                 </div>
                 <div class="login"> 
-                    <a class="ativo" onclick="abrirLogin()" href="#login">Log in</a>
+                    <a class="ativo" onclick="abrirLogin()" href="#login">Login</a>
                 </div>
             </div>
     </div>
@@ -233,13 +233,30 @@ include("teste.php");
     </div>
     <div id="login" class="loginn" >
         <div class="login-contente">
-        <form action="caminho.php" method="get">
-            <input class="inputs" id="login-usuario" name="usuario" placeholder="Usuario" type="text" required>
-            <input class="inputs" id="login-password" name="password" placeholder="Password" type="password" required>
-            <input class="inputs" id="login-submit" type="submit" value="Enviar">
+            <h2 class="tituloLogin">Login</h2>
+        <form action="caminho.php" method="post">
+            <input class="inputs" id="login-usuario" name="usuario" placeholder="Usuário" type="text" required>
+            <div class="inputSenha">
+                <input class="inputs" id="login-senha" name="senha" placeholder="Senha" type="password" required>
+                <input type="checkbox" name="mostar" id="olho" onchange="verSenha()">
+            </div>
+            <input class="inputs" id="login-submit" type="submit" value="Entrar">
         </form>
+        <p>Usuário novo click <a onclick="mostrarCadastro()" href="#login">aqui</a></p>
+        </div>
+        <div class="userNovo">
+            <h2 class="tituloLogin">Cadastro</h2>
+            <form action="userNovo.php" method="post">
+                <input class="inputs" type="text" id="novo-usuario" name="novo-usuario" placeholder="Defina seu user" required>
+                <input class="inputs" type="text" id="novo-senha" name="novo-senha" placeholder="Defina sua senha" required>
+                <input class="inputs" type="submit" id="novo-submit" name="novo-submit" value="Salvar">
+            </form>
+        </div>
+        <div class="recado">
+            <p>Faça <a onclick="mostrarLogin()" href="#login">login</a> para adicionar documentos e fotos na página</p>
         </div>
     </div>
+
    <!-- <div class="rodape">
         rodape
     </div>-->

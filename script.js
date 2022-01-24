@@ -37,11 +37,6 @@ $('.mini-menu a[href^="#"]').on('click', function(e) {
 });
 
 /* fim scroll suave */
-let n = '';
-let user1 = document.querySelector('#user1');
-let teste = document.querySelector('#teste');
-//let imgUser = document.querySelector('#imgUser');
-let pUser = document.querySelector('#pUser');
 
 function usuario(n){
 
@@ -91,13 +86,33 @@ function abrirLogin(){
     $("#login").css("display","flex");
 }
 
-
 function fecharLogin(){
     
     setTimeout(function(){
         $("#login").css("display","none");
     },500)
 }
+
+function mostrarCadastro(){
+    $(".login-contente").css("display","none");
+    $(".userNovo").css("display","flex");
+}
+
+function mostrarLogin(){
+    $(".userNovo").css("display","none");
+    $(".login-contente").css("display","flex");
+}
+
+var checkbox = document.getElementById("olho");
+function verSenha(){
+    if(checkbox.checked){
+        $("#login-senha").attr("type", "text");
+        }
+    else {
+        $("#login-senha").attr("type", "password");
+        }
+};
+
 
 
 

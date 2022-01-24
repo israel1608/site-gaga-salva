@@ -345,25 +345,62 @@ margin: 0 auto;
     color: rgb(253, 2, 2) !important;
 }
 .loginn{
-    display: none;
+    display:none;
     text-align: center;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    flex-direction: column;
+}
+.loginn p {
+    color: gray;
 }
 .login-contente{
-    height: 300px;
+    height: 220px;
     width: 200px;
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(180, 180, 180);
     border-radius: 10%;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 25px;
+    padding: 15px;
+    border: #000 1px solid;
+    flex-direction: column;
 }
+.login-contente p {
+    color: #000;
+    margin: 10px;
+}
+
 .inputs{
-    margin: 15px;
+    margin: 13px;
+}
+#login-senha{
+    margin-right: 0;
+}
+#olho{
+    margin: auto;
+    margin-left: 3px;
+}
+.inputSenha{
+    display:flex;
+}
+.userNovo{
+    height: 220px;
+    width: 200px;
+    background-color: rgb(180, 180, 180);
+    border-radius: 10%;
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: #000 1px solid;
+    flex-direction: column;
+}
+.tituloLogin{
+    margin: 10px;
 }
  
 
