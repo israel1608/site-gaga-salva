@@ -1,5 +1,5 @@
 <?php
-include("teste.php");
+include("data.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -18,11 +18,12 @@ include("teste.php");
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
     
-    <script>
+    <!--<script>
         $(document).ready(function(){
             loadTabela();
         });
     </script>
+    -->
 </head>
 <body>
      <div class="fixed">
@@ -44,18 +45,16 @@ include("teste.php");
                     <a class="ativo" onclick="fecharLogin()" href="#arquivos">arquivos</a>
                     <!--<a class="ativo" href="#podcast">podcast</a>-->
                     <a class="ativo" onclick="fecharLogin()" href="#fotos">fotos</a>
-                    <!--<a class="ativo" href="#">videos</a>-->
-                </div>
-                <div class="login"> 
-                    <a class="ativo" onclick="abrirLogin()" href="#login">Login</a>
+                    <!--<a class="ativo" href="#">videos</a>--> 
+                    <a class="login" onclick="abrirLogin()" href="#login">Login</a>
                 </div>
             </div>
     </div>
 
     <div class="main">
         <section class="fotoIntegrantes" id="foto">
-        <div class="conteinerfoto">
-                <img src="imagem-dos-integrantes.jpg" alt="">
+        <div class="conteinerfoto"><a href="#inicio"><img src="fotos mini/imagem-dos-integrantes.jpg" alt=""></a>
+                
             </div> 
         </section>
     <section class="inicio" id="inicio">
@@ -125,74 +124,77 @@ include("teste.php");
             <div class="gametags" id="gametag">
                 
                     <img class="warzone"src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mw-wz/WZ-Season-Three-Announce-TOUT.jpg" alt="#">
-                        
-                    <div class="caixapreta">
-                        <div class="metadecp">
-                            <div class="itemtag"> <li class="tag" id="link1">Strutsan</li><button class="btn" data-clipboard-target="#link1">
+                    <div id="Itens" class="conteinerGametag">  
+
+                    <input type="text" id="txtBusca" placeholder="Digite aqui um valor para pesquisar..."/>
+
+                        <div class="caixapreta">
+                            <div class="metadecp">
+                                <div class="itemtag"> <li class="tag" id="link1">Strutsan</li><button class="btn" data-clipboard-target="#link1">
+                                    <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag1"> <li class="tag" id="link2">l3v3rc49r1c10u5</li><button class="btn" data-clipboard-target="#link2">
+                                    <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag"> <li class="tag" id="link3">W16u7S7rly</li><button class="btn" data-clipboard-target="#link3">
                                 <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
                             </button></div>
-                            <div class="itemtag1"> <li class="tag" id="link2">l3v3rc49r1c10u5</li><button class="btn" data-clipboard-target="#link2">
+                            <div class="itemtag1"> <li class="tag" id="link4">Wigglychenko</li><button class="btn" data-clipboard-target="#link4">
                                 <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
                             </button></div>
-                            <div class="itemtag"> <li class="tag" id="link3">W16u7S7rly</li><button class="btn" data-clipboard-target="#link3">
-                            <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
-                        </button></div>
-                        <div class="itemtag1"> <li class="tag" id="link4">Wigglychenko</li><button class="btn" data-clipboard-target="#link4">
-                            <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
-                        </button></div>
-                            <div class="itemtag"> <li class="tag" id="link5">Overwrough</li><button class="btn" data-clipboard-target="#link5">
-                                <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag1"> <li class="tag" id="link6">s7ru7w166ly</li><button class="btn" data-clipboard-target="#link6">
-                                <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag"> <li class="tag" id="link7">VanChemical</li><button class="btn" data-clipboard-target="#link7">
-                                <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag1"> <li class="tag" id="link8">m3l0nch3m1c4l</li><button class="btn" data-clipboard-target="#link8">
-                                <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag"> <li class="tag" id="link9">NoxiousMelon</li><button class="btn" data-clipboard-target="#link9">
-                                <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag1"> <li class="tag" id="link10">MelonTheProf</li><button class="btn" data-clipboard-target="#link10">
-                                <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
-                            </button></div>
+                                <div class="itemtag"> <li class="tag" id="link5">Overwrough</li><button class="btn" data-clipboard-target="#link5">
+                                    <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag1"> <li class="tag" id="link6">s7ru7w166ly</li><button class="btn" data-clipboard-target="#link6">
+                                    <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag"> <li class="tag" id="link7">VanChemical</li><button class="btn" data-clipboard-target="#link7">
+                                    <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag1"> <li class="tag" id="link8">m3l0nch3m1c4l</li><button class="btn" data-clipboard-target="#link8">
+                                    <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag"> <li class="tag" id="link9">NoxiousMelon</li><button class="btn" data-clipboard-target="#link9">
+                                    <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag1"> <li class="tag" id="link10">MelonTheProf</li><button class="btn" data-clipboard-target="#link10">
+                                    <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
+                                </button></div>
+                            </div>
+                            <div class="metadecp">
+                                <div class="itemtag1"> <li class="tag" id="link11">lCh30nM3l4l</li><button class="btn" data-clipboard-target="#link11">
+                                    <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag"> <li class="tag" id="link12">VorberGhus</li><button class="btn" data-clipboard-target="#link12">
+                                    <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag1"> <li class="tag" id="link13">Clevoracious</li><button class="btn" data-clipboard-target="#link13">
+                                    <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag"> <li class="tag" id="link14">Bernboroughkau</li><button class="btn" data-clipboard-target="#link14">
+                                    <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag1"> <li class="tag" id="link15">HellishVoracious</li><button class="btn" data-clipboard-target="#link15">
+                                    <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag"> <li class="tag" id="link16">c49r1c10u5</li><button class="btn" data-clipboard-target="#link16">
+                                    <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag1"> <li class="tag" id="link17">l3v3rc49r</li><button class="btn" data-clipboard-target="#link17">
+                                    <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag"> <li class="tag" id="link18">V0r6hB3ru5</li><button class="btn" data-clipboard-target="#link18">
+                                    <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag1"> <li class="tag" id="link19">TheShaggyRitzy</li><button class="btn" data-clipboard-target="#link19">
+                                    <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
+                                </button></div>
+                                <div class="itemtag"> <li class="tag" id="link20">fhrughu</li><button class="btn" data-clipboard-target="#link20">
+                                    <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
+                                </button></div>
+                            </div>
                         </div>
-                        <div class="metadecp">
-                            <div class="itemtag1"> <li class="tag" id="link11">lCh30nM3l4l</li><button class="btn" data-clipboard-target="#link11">
-                                <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag"> <li class="tag" id="link12">VorberGhus</li><button class="btn" data-clipboard-target="#link12">
-                                <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag1"> <li class="tag" id="link13">Clevoracious</li><button class="btn" data-clipboard-target="#link13">
-                                <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag"> <li class="tag" id="link14">Bernboroughkau</li><button class="btn" data-clipboard-target="#link14">
-                                <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag1"> <li class="tag" id="link15">HellishVoracious</li><button class="btn" data-clipboard-target="#link15">
-                                <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag"> <li class="tag" id="link16">c49r1c10u5</li><button class="btn" data-clipboard-target="#link16">
-                                <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag1"> <li class="tag" id="link17">l3v3rc49r</li><button class="btn" data-clipboard-target="#link17">
-                                <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag"> <li class="tag" id="link18">V0r6hB3ru5</li><button class="btn" data-clipboard-target="#link18">
-                                <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag1"> <li class="tag" id="link19">TheShaggyRitzy</li><button class="btn" data-clipboard-target="#link19">
-                                <img class="copiar" src="icones/copiar-texto.png" alt="Copy to clipboard">
-                            </button></div>
-                            <div class="itemtag"> <li class="tag" id="link20">fhrughu</li><button class="btn" data-clipboard-target="#link20">
-                                <img class="copiar" src="icones/copiarRed.jpg" alt="Copy to clipboard">
-                            </button></div>
-                        </div>
-                    </div>
-                
+                    </div>  
             </div>
         </div>
         <div id='arquivos'class="arquivos">
@@ -200,14 +202,10 @@ include("teste.php");
                 <h1>Arquivos</h1>
             <table id="tabela">
                 <tr>
-                    <th class="cabeçalho">Nome</th>
-                    <th class="cabeçalho">Tipo</th>
-                    <th class="cabeçalho">Tamanho(Bytes)</th>
-                    <th class="cabeçalho">Data de modificação</th>
-                </tr>
-
-                <tr id="linhaTabela">     
-
+                    <th class="cabecalho">Nome</th>
+                    <th class="cabecalho">Tipo</th>
+                    <th class="cabecalho">Tamanho(Bytes)</th>
+                    <th class="cabecalho">Data de modificação</th>
                 </tr>    
             </table>
             </div>
@@ -253,7 +251,7 @@ include("teste.php");
             </form>
         </div>
         <div class="recado">
-            <p>Faça <a onclick="mostrarLogin()" href="#login">login</a> para adicionar documentos e fotos na página</p>
+            <p>Faça <a onclick="mostrarLogin()" href="#login">login</a> para adicionar fotos e arquivos na página</p>
         </div>
     </div>
 
@@ -261,8 +259,8 @@ include("teste.php");
         rodape
     </div>-->
    
-<script src="script.js"></script>
-<script src="users.js"></script>
+<script src="JS/script.js"></script>
+<script src="JS/users.js"></script>
    
 </body>
 </html>

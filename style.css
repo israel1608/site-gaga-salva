@@ -46,7 +46,7 @@ display: block;
     background-color:white;
 }
 .login{
-    float: right;
+    float: right !important;
 }
 /*fim menu do topo*/
 
@@ -266,9 +266,22 @@ margin-left: 13px;
     float: right;
     
 }
+.conteinerGametag{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#txtBusca{
+    
+    width:300px;
+	border: solid 1px;
+    z-index: 50;
+    margin: 20px auto 0;
+}
    
 /*fim gametags*/
 
+/* card dos participantes*/
 .teste{
     display: none;
     align-items: center;
@@ -302,32 +315,32 @@ margin-left: 13px;
     width: 300px;
     padding: 20px;
 }
+/* arquivos*/
 .arquivos{
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: rgb(207, 226, 220);
+   background-color: white;
     padding: 40px;
 }
 .arquivos-content{
     border: #000 solid 1px;
     background-color: #f2f2f2;
     padding: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+    height: 480px;
+    overflow-y: auto;
 }
 .arquivos-content h1{
 margin: 15px auto;
 }
-.cabeçalho{
-    padding: 15px;
+.cabecalho{
+    padding: 10px;
 }
-.itens-tabela{
-    padding: 15px;
-}
-#tabela td th {
-    padding: 5px;
-}
+
+/*fotos*/
+
 .fotos{
 width: 50%;
 position: relative;
@@ -344,6 +357,7 @@ margin: 0 auto;
 {
     color: rgb(253, 2, 2) !important;
 }
+/*Area de login*/
 .loginn{
     display:none;
     text-align: center;
