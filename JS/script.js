@@ -16,6 +16,7 @@ clipboard.on('success', function(e) {
 
     e.clearSelection();
     alert('copiado');
+
 });
 
 clipboard.on('error', function(e) {
