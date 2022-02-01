@@ -44,7 +44,7 @@ include("data.php");
                     <a class="ativo" onclick="fecharLogin()" href="#gametag">gametags</a>
                     <a class="ativo" onclick="fecharLogin()" href="#arquivos">arquivos</a>
                     <!--<a class="ativo" href="#podcast">podcast</a>-->
-                    <a class="ativo" onclick="fecharLogin()" href="#fotos">fotos</a>
+                    <!-- <a class="ativo" onclick="fecharLogin()" href="#fotos">fotos</a>-->
                     <!--<a class="ativo" href="#">videos</a>--> 
                     <a class="login" onclick="abrirLogin()" href="#login">Login</a>
                 </div>
@@ -93,53 +93,43 @@ include("data.php");
             
     </section>-->
 
-    <!--<div class="participantessection" id="participantes">
-        <div class="conteiner">
+        <div id="participantes" class="participantes">
             <h1>Participantes</h1>
-            <div class="conteinerparticipantes">
-                <div class="miniconteiner">
-                    <div class="linha"> 
-                        <div onclick="usuario(0)" class="usuario">
-                            <img class="minifoto" src="fotos mini/adina.jpg" alt="Adina">
-                            <h2>Adinaldo Pimentel</h2>
-                        </div>
-                        <div id='user1'onclick="usuario(1)" class="usuario">
-                            <img class="minifoto" src="fotos mini/afonso.jpg" alt="Afonso">
-                            <h2>Afonso Lobato</h2>
-                        </div>
-                        <div onclick="usuario(2)"class="usuario">
-                            <img class="minifoto" src="fotos mini/gustavo.jpg" alt="Gustavo">
-                            <h2>Gustavo Negrão</h2>
-                        </div> 
-                    </div>
-                    <div class="linha">
-                            <div onclick="usuario(3)"class="usuario">
-                                <img class="minifoto" src="fotos mini/israel.jpg" alt="Israel">
-                                <h2>Israel Costa</h2>
-                            </div>
-                            <div onclick="usuario(4)"class="usuario">
-                                <img class="minifoto" src="fotos mini/pedro.jpg" alt="Pedro">
-                                <h2>Pedro Valério</h2>
-                            </div>
-                            <div onclick="usuario(5)"class="usuario">
-                                <img class="minifoto" src="fotos mini/jonhwick2.jpg" alt="jonhwick">
-                                <h2>Jonh Wick</h2>
-                            </div>
-                    </div>
-                    <div onclick="fechar()" id='teste' class="teste">
-                        <div class="testeContent">
-                            <div class="fechar"><button onclick="fechar()">fechar</button></div>
-                            <div class="telaUser">
-                                <img id="imgUser" class="imgUser" src="">
-                                <p id="pUser"></p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="participantes-contente">
+                <div class="participante">
+                    <img src="fotos mini/adina.jpg" alt="#">
+                    <h2>nome</h2>
+                </div>
+                <div class="participante">
+                    <img src="fotos mini/adina.jpg" alt="#">
+                    <h2>nome</h2>
+                </div>
+                <div class="participante">
+                    <img src="fotos mini/adina.jpg" alt="#">
+                    <h2>nome</h2>
+                </div>
+                <div class="participante">
+                    <img src="fotos mini/adina.jpg" alt="#">
+                    <h2>nome</h2>
+                </div>
+                <div class="participante">
+                    <img src="fotos mini/adina.jpg" alt="#">
+                    <h2>nome</h2>
+                </div>
+                <div class="participante">
+                    <img src="fotos mini/adina.jpg" alt="#">
+                    <h2>nome</h2>
+                </div>
+                <div class="participante">
+                    <img src="fotos mini/adina.jpg" alt="#">
+                    <h2>nome</h2>
+                </div>
+                <div class="participante">
+                    <img src="fotos mini/adina.jpg" alt="#">
+                    <h2>nome</h2>
                 </div>
             </div>
         </div>
-    </div>-->
-           
         <div class="gametags" id="gametag">
     
             <div id="Itens" class="conteinerGametag">  
@@ -164,6 +154,7 @@ include("data.php");
                     
                     
                     
+                    
                 </div>
             </div>
         </div> 
@@ -180,7 +171,7 @@ include("data.php");
             </table>
             </div>
         </div>
-        <div id='fotos'class="fotos-contente">
+       <!-- <div id='fotos'class="fotos-contente">
             <div class="fotos">
                 <div class="carousel">
                         <div>
@@ -197,7 +188,7 @@ include("data.php");
                         </div>
                 </div>
             </div>
-        </div>         
+        </div>  -->       
 
     <div id="login" class="loginn" >
         <div class="login-contente">

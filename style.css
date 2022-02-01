@@ -65,80 +65,65 @@ a.foto{
 }
 
 /*inicio participantes*/
-
-.conteiner {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 100px 30px 0px 30px; 
-}
- .conteiner h1{
-     text-align: center;
- }
- .conteiner li{
-     font-size: 20px;
-     list-style: none;
- }
- .conteinerparticipantes{
-    margin-top: 40px;
-     height: 300px;
-     text-align: center;
- }
- .miniconteiner{
-     width: 876px; 
-     height: 180px;
-     background-color:black;
-     margin: 0 auto;
- }
- .usuario{
-     height: 78px;
-     width: 280px;
-     background-color:#333;
-     border: 1px black solid;
-     display: flex;
-     float: left;
-     padding: 5px;
-     align-items: center;
-     color: white;
-     font-size: 15px;
-     cursor: pointer;
-    text-align: left;
-    position:relative;
-
- }
- 
- .usuario:hover{
-    background-color:white;
-    top:-2px;box-shadow:0 3px 3px black;
-    color: #000;
-
- }
- .usuario h2 {
-    width: 100%;  
-    text-decoration: none;
-    color: white;
- }
- .usuario h2:hover{
-     color: black;
- }
- .usuario h2{
-margin-left: 13px;
- }
- .linha{
-     background-color: transparent;
-     display: flex;
-     float: left;
+.participantes{
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+   background-color:#f1f1f1;
+    padding: 70px;
+    flex-direction: column;
     height: auto;
+    min-height: 70vh;
+    padding-bottom: 100px;
 
- }
- .minifoto{
-     height: 60px;
-     width: 60px;
-    border: 2px #333 solid;
+}
+.participantes h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.participantes-contente{
+    display: flex;
+    flex-wrap: wrap;
+}
+.participante{
+    width: 280px;
+    height: 78px;
+    display: flex;
+    background-color: #333;
+    border: #000 1px solid;
+    break-inside: avoid-column;
+    flex: 1 250px;
+    align-items: center;
+}
+.participantes-contente :hover{
+
+    background-color: white;
+    color: #000;
+    
+}
+.participantes h2 :hover{
+    color: #000;
+}
+
+.participante img{
+    width: 60px;
+    height: 60px;
+    float: left;
     border-radius: 50%;
- }
- .usuario h1{
-     padding: 10px;
- }
+    border: 2px #333 solid;
+    margin: auto 5px;
+}
+
+.participante h2{
+    text-align: left;
+    margin: 1px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+}
  
 /*fim participantes*/
 
@@ -296,13 +281,21 @@ margin-left: 13px;
     justify-content: center;
    background-color: white;
     padding: 40px;
+    background-image: url(https://i.pinimg.com/originals/05/55/37/0555374749aca268dab5c4e96810733d.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#arquivos{
+    padding-top: 80px;
 }
 .arquivos-content{
-    border: #000 solid 1px;
+    border: #000 solid 2px;
+    border-radius: 20px;
     background-color: #f2f2f2;
     padding: 20px;
     padding-bottom: 30px;
-    height: 422px;
+    height: 400px;
     overflow-y: auto;
 }
 .arquivos-content h1{
