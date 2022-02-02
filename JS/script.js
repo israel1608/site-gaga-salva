@@ -37,6 +37,16 @@ $('.mini-menu a[href^="#"]').on('click', function(e) {
 	}, 500);
 });
 
+$('.menu-aberto a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			targetOffset = $(id).offset().top;
+			
+	$('html, body').animate({ 
+		scrollTop: targetOffset - 0
+	}, 500);
+});
+
 /* fim scroll suave */
 
 function usuario(n){  /*abri o card dos participantes*/ 
@@ -137,6 +147,18 @@ document.body.onresize = function() {
         $(".sub-menu").css("display","none");
     } 
 };
+var menuOn = false;
+function abrirMenu(){
+    if(menuOn == false){
+        $(".menu-aberto").css("display","flex");
+        $(".sub-menu").html("...");
+        menuOn = true;
+    }else{
+        $(".menu-aberto").css("display","none");
+        $(".sub-menu").html("menu");
+        menuOn = false
+    }  
+}
 
 
 

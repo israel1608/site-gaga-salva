@@ -26,12 +26,20 @@ include("data.php");
     -->
 </head>
 <body>
+    
+    <div class="menu-aberto">
+        <a onclick="fecharLogin(),abrirMenu()" class="links" href="#inicio">início</a>
+        <a  onclick="fecharLogin(),abrirMenu()" href="#participantes">participantes</a>
+        <a  onclick="fecharLogin(),abrirMenu()" href="#gametag">gametags</a>
+        <a  onclick="fecharLogin(),abrirMenu()" href="#arquivos">arquivos</a>
+        <a  onclick="abrirLogin(),abrirMenu()" href="#login">Login</a> 
+    </div>
     <div class="fixed">
         <div class="header">
             <span>SÓ O GAGÁ SALVA</span>
         </div>
         <div class="menu">
-            <div class="sub-menu">
+            <div onclick="abrirMenu()" class="sub-menu">
                 <span>menu</span>
             </div>
             <div class="mini-menu">
