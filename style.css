@@ -95,6 +95,7 @@ a.foto{
     break-inside: avoid-column;
     flex: 1 250px;
     align-items: center;
+    cursor: pointer;
 }
 .participantes-contente :hover{
 
@@ -129,20 +130,22 @@ a.foto{
 
 /*inicio do inicio*/
  .inicio {
-    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-    padding: 70px 30px 0px 30px;
-
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 40px;
+    padding-top: 80px;
  }
- .inicio pre{
+ .inicio p{
     font-size: 15px;
-    border-bottom: 3px solid rgb(75, 73, 73);
-    padding-bottom: 50px;
     line-height: 25px;
     text-align: left;
-    
-
+    font-family: monospace;
+    margin: 1em 0px;
+    padding: 10px;
  }
 
  .inicio h1{
@@ -158,23 +161,6 @@ a.foto{
     width: 100%;
     margin: 0;
   z-index: 100;
- }
- .fotoIntegrantes{     /*fundo da foto*/
-    background-color: #000;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    
- }
- .conteinerfoto img{
-     width: auto;
-     height: 100vh;
-     background-size: cover;
-     padding-top: 19px;
-     background-position: center;
-
  }
 
  /*inicio gametags*/
@@ -308,16 +294,17 @@ margin: 15px auto;
 /*fotos*/
 
 .fotos{
-width: 50%;
-position: relative;
-margin: 0 auto;
-}
-#fotos{
-    padding-top: 25px;
-}
-.fotos-contente{
     background-color: #000;
     margin: 0 auto;
+    padding: 60px 25px 0;
+}
+
+.fotos-contente{
+    max-width: 650px;
+    margin:auto;
+}
+.fotos-contente img{
+    width: inherit;
 }
 .slick-dots li.slick-active button:before
 {
