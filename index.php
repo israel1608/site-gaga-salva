@@ -31,6 +31,9 @@ include("data.php");
             <span>SÓ O GAGÁ SALVA</span>
         </div>
         <div class="menu">
+            <div class="sub-menu">
+                <span>menu</span>
+            </div>
             <div class="mini-menu">
                 <a class="foto" onclick="fecharLogin()" href="#foto">
                     <img src="icones/logo.png"alt="#"width=61 height=40>
@@ -119,7 +122,7 @@ include("data.php");
             </div>
         </div>
     </div>
-    <!--<div class="gametags" id="gametag">
+    <div class="gametags" id="gametag">
 
         <div id="Itens" class="conteinerGametag">  
         <input type="text" id="txtBusca" placeholder="Digite aqui um valor para pesquisar..."/>  
@@ -142,7 +145,7 @@ include("data.php");
                 </div>
             </div>
         </div>
-    </div> -->
+    </div> 
     <div id='arquivos'class="arquivos">
         <div class="arquivos-content">
             <h1>Arquivos</h1>

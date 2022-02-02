@@ -120,6 +120,23 @@ $(function(){
 		});
 	});
 });
+var viewportWidth = $(window).width();
+
+$(function esconderMenu(){
+    if(viewportWidth<571){
+        $(".mini-menu").css("display","none");
+        $(".sub-menu").css("display","block");
+    } 
+})
+document.body.onresize = function() {
+    if (document.body.clientWidth < 571) {
+        $(".mini-menu").css("display","none");
+        $(".sub-menu").css("display","block");
+    }else{
+        $(".mini-menu").css("display","block");
+        $(".sub-menu").css("display","none");
+    } 
+};
 
 
 
