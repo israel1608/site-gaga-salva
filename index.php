@@ -89,35 +89,27 @@ include("data.php");
         <div class="participantes-contente">
             <div onclick="usuario(0)" class="participante">
                 <img src="fotos mini/adina.jpg" alt="#">
-                <h2>nome</h2>
+                <h2>Adina</h2>
             </div>
-            <div class="participante">
-                <img src="fotos mini/adina.jpg" alt="#">
-                <h2>nome</h2>
+            <div onclick="usuario(1)" class="participante">
+                <img src="fotos mini/afonso.jpg" alt="#">
+                <h2>Afonsinho</h2>
             </div>
-            <div class="participante">
-                <img src="fotos mini/adina.jpg" alt="#">
-                <h2>nome</h2>
+            <div onclick="usuario(2)" class="participante">
+                <img src="fotos mini/gustavo.jpg" alt="#">
+                <h2>Gugu</h2>
             </div>
-            <div class="participante">
-                <img src="fotos mini/adina.jpg" alt="#">
-                <h2>nome</h2>
+            <div onclick="usuario(3)" class="participante">
+                <img src="fotos mini/israel.jpg" alt="#">
+                <h2>Israel</h2>
             </div>
-            <div class="participante">
-                <img src="fotos mini/adina.jpg" alt="#">
-                <h2>nome</h2>
+            <div onclick="usuario(4)" class="participante">
+                <img src="fotos mini/pedro.jpg" alt="#">
+                <h2>Pedroca</h2>
             </div>
-            <div class="participante">
-                <img src="fotos mini/adina.jpg" alt="#">
-                <h2>nome</h2>
-            </div>
-            <div class="participante">
-                <img src="fotos mini/adina.jpg" alt="#">
-                <h2>nome</h2>
-            </div>
-            <div class="participante">
-                <img src="fotos mini/adina.jpg" alt="#">
-                <h2>nome</h2>
+            <div onclick="usuario(5)" class="participante">
+                <img src="fotos mini/jonhwick2.jpg" alt="#">
+                <h2>John Wick</h2>
             </div>
         </div>
         <div onclick="fechar()" id='teste' class="teste">
@@ -144,12 +136,44 @@ include("data.php");
                     <span><img data-clipboard-target="#link2" class="copiar btn"src="icones/copiarRed.jpg" alt="#"></span>
                 </div>
                 <div class="tag">
+                    <li id="link3" class="tag-nome">Strutsan</li>
+                    <span><img data-clipboard-target="#link3" class="copiar btn"src="icones/copiarRed.jpg" alt="#"></span>
+                </div>
+                <div class="tag">
+                    <li id="link4" class="tag-nome">l3v3rc49r1c10u5</li>
+                    <span><img data-clipboard-target="#link4" class="copiar btn"src="icones/copiarRed.jpg" alt="#"></span>
+                </div>
+                <div class="tag">
+                    <li id="link5" class="tag-nome">W16u7S7rly</li>
+                    <span><img data-clipboard-target="#link5" class="copiar btn"src="icones/copiarRed.jpg" alt="#"></span>
+                </div>
+                <div class="tag">
+                    <li id="link6" class="tag-nome">Wigglychenko</li>
+                    <span><img data-clipboard-target="#link6" class="copiar btn"src="icones/copiarRed.jpg" alt="#"></span>
+                </div>
+                <div class="tag">
+                    <li id="link7" class="tag-nome">Overwrough</li>
+                    <span><img data-clipboard-target="#link7" class="copiar btn"src="icones/copiarRed.jpg" alt="#"></span>
+                </div>
+                <div class="tag">
+                    <li id="link8" class="tag-nome">s7ru7w166ly</li>
+                    <span><img data-clipboard-target="#link8" class="copiar btn"src="icones/copiarRed.jpg" alt="#"></span>
+                </div>
+                <div class="tag">
                     <li id="link1" class="tag-nome">testando</li>
                     <span><img data-clipboard-target="#link1" class="copiar btn"src="icones/copiarRed.jpg" alt="#"></span>
                 </div>
                 <div class="tag">
                     <li id="link2" class="tag-nome">testandugyuoo</li>
                     <span><img data-clipboard-target="#link2" class="copiar btn"src="icones/copiarRed.jpg" alt="#"></span>
+                </div>
+                <div class="tag">
+                    <li id="link3" class="tag-nome">Strutsan</li>
+                    <span><img data-clipboard-target="#link3" class="copiar btn"src="icones/copiarRed.jpg" alt="#"></span>
+                </div>
+                <div class="tag">
+                    <li id="link4" class="tag-nome">l3v3rc49r1c10u5</li>
+                    <span><img data-clipboard-target="#link4" class="copiar btn"src="icones/copiarRed.jpg" alt="#"></span>
                 </div>
             </div>
         </div>
@@ -167,25 +191,7 @@ include("data.php");
         </table>
         </div>
     </div>
-       <!-- <div id='fotos'class="fotos-contente">
-            <div class="fotos">
-                <div class="carousel">
-                        <div>
-                            <img src="https://www.artesanatototal.com/wp-content/uploads/2019/03/Imagens-para-papel-de-parede14.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="https://i.pinimg.com/736x/f1/5b/fa/f15bfaf85305a6e13006c3ba5663c404.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/imagem-em-lente-convexa.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="https://marketingcomcafe.com.br/wp-content/uploads/2017/12/banco-imagens-gratis.png" alt="">
-                        </div>
-                </div>
-            </div>
-        </div>  -->       
-
+              
     <div id="login" class="loginn" >
         <div class="login-contente">
             <h2 class="tituloLogin">Login</h2>

@@ -131,7 +131,7 @@ a.foto{
     background-color: #333;
     border: #000 1px solid;
     break-inside: avoid-column;
-    flex: 1 250px;
+    flex: 1 280px;
     align-items: center;
     cursor: pointer;
 }
